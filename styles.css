@@ -1,0 +1,78 @@
+:root{
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+    --form-inputs: 24px;
+}
+
+body{
+    background-color: var(--light-grayish-cyan);
+}
+.container{
+    border: 1px solid black;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flexbox;
+    flex-direction: column;
+    flex-flow: nowrap; */
+    max-width: 600px;
+    width: 100%;
+    height: 300px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    border-radius: 10px;
+}
+.box-1{
+    border: 1px solid red;
+    max-width: 300px;
+    width: 100%;
+    /* padding: 5px; */
+}
+.result{
+    border: 1px solid red;
+    /* max-width: 300px;
+    width: 100%;
+    padding-left: 20px; */
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.result_tip-amount span small{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+button{
+    width: 90px;
+    padding: 10px;
+}
+.custom{
+    width: 65px;
+    padding: 10px;
+}
+.bill{
+    padding: 10px;
+    width: 90%;
+}
+.people{
+    padding: 10px;
+    width: 90%;
+}
+.label{
+    margin-top: 10px;
+}
+#reset{
+    margin-top: 168px;
+    width: 90%;
+}
