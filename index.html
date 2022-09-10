@@ -19,6 +19,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin-top: 40px;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -27,7 +28,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="box-1">
+      <div class="calculator">
         <label for="text">Bill</label><br />
         <input type="number" class="bill" /><br /><br /><br />
         <label for="text">Select Tip %</label>
@@ -37,35 +38,37 @@
           <button>15%</button>
           <button>25%</button>
           <button>50%</button>
-          <input type="number" class="custom" />
+          <input type="number" placeholder="Custom" class="custom" />
         </div>
         <br /><br />
         <label for="text" class="label">Number of People</label><br />
         <input type="number" class="people" />
       </div>
-      
-        <div class="result">
-          <div class="result__tip-amount">
-            <span>Tip Amount
-              <small>/ person</small>
-            </span>
-  
-            <div class="total">
-              <img src="./images/icon-dollar.svg">
-              <span id="total-tip-amount">0.00</span>
-            </div>
-          </div>
-  
-          <div class="result__total">
-            <span>Total
-              <small>/ person</small>
-            </span>
-  
-            <div class="total">
-              <img src="./images/icon-dollar.svg">
-              <span id="total">0.00</span>
-            </div>
 
+      <div class="result">
+        <div class="result__tip-amount">
+          <span
+            >Tip Amount
+            <small>/ person</small>
+          </span>
+
+          <div class="total">
+            <img src="./images/icon-dollar.svg" />
+            <span id="total-tip-amount">0.00</span>
+          </div>
+        </div>
+
+        <div class="result__total">
+          <span
+            >Total
+            <small>/ person</small>
+          </span>
+
+          <div class="total">
+            <img src="./images/icon-dollar.svg" />
+            <span id="total">0.00</span>
+          </div>
+        </div>
         <button type="reset" id="reset">RESET</button>
       </div>
     </div>
