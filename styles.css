@@ -32,7 +32,9 @@ body {
   border-radius: 10px;
   padding-left: 10px
 }
-
+div.people {
+    position: relative;
+}
 .button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -119,6 +121,21 @@ div.result .result__total .total span {
 div.result .result__total {
   margin-top: 15px;
 }
-@media (min-width: 800px){
-    
+@media (max-width: 800px){
+    .container {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 350px;
+        width: 100%;
+        border-radius: 10px;
+        padding: 15px;
+      }
+      .calculator{
+        margin: 10px;
+      }
+      div.result{
+        margin: 10px;
+      }
 }
